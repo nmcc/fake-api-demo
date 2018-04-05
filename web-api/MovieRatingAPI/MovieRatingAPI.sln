@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRatingAPI", "web-api\MovieRatingAPI\MovieRatingAPI\MovieRatingAPI.csproj", "{85DEF88C-B492-45A6-9BFF-E1F16B020104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRatingAPI", "MovieRatingAPI.csproj", "{F61D07C5-E916-464E-9FAC-D4E7FA3AEB22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85DEF88C-B492-45A6-9BFF-E1F16B020104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85DEF88C-B492-45A6-9BFF-E1F16B020104}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85DEF88C-B492-45A6-9BFF-E1F16B020104}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85DEF88C-B492-45A6-9BFF-E1F16B020104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61D07C5-E916-464E-9FAC-D4E7FA3AEB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61D07C5-E916-464E-9FAC-D4E7FA3AEB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61D07C5-E916-464E-9FAC-D4E7FA3AEB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61D07C5-E916-464E-9FAC-D4E7FA3AEB22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B6B39298-CF91-4C4E-AADB-AD9F95C173AB}
+		SolutionGuid = {9949EE77-C00D-4500-AFA9-A165B05BBD22}
 	EndGlobalSection
 EndGlobal
