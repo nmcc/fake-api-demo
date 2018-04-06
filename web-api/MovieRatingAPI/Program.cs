@@ -20,6 +20,7 @@ namespace MovieRatingAPI
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5454")
                 .Build();
     }
 }
