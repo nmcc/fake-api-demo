@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-controller="Movie" asp-action="search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">
+                <span>Search Movies</span>
+                <input type="text" name="q" />
+                <input type="submit" value="Search" />
+            </div>
+        </div>
+    </div>
+</form>
