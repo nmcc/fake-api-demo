@@ -20,6 +20,7 @@ namespace MovieRatingApi.Fake
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls("http://locahost:6226")
                 .Build();
     }
 }
