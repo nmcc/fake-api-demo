@@ -1,0 +1,67 @@
+﻿{
+  "runtime": "NetCore20",
+  "swaggerGenerator": {
+    "webApiToSwagger": {
+      "controllerNames": [
+        "MovieRatingAPI.Controllers.MovieController"
+      ],
+      "isAspNetCore": true,
+      "defaultUrlTemplate": "api/{controller}/{id?}",
+      "defaultPropertyNameHandling": "Default",
+      "defaultReferenceTypeNullHandling": "Null",
+      "defaultEnumHandling": "Integer",
+      "flattenInheritanceHierarchy": false,
+      "generateKnownTypes": true,
+      "generateXmlObjects": false,
+      "generateAbstractProperties": false,
+      "addMissingPathParameters": false,
+      "ignoreObsoleteProperties": false,
+      "allowReferencesWithProperties": false,
+      "excludedTypeNames": [],
+      "infoTitle": "My Title",
+      "infoVersion": "1.0.0",
+      "output": null,
+      "assemblyPaths": [
+        "../web-api/MovieRatingAPI/bin/Release/netcoreapp2.0/win7-x64/MovieRatingAPI.dll"
+      ],
+      "referencePaths": []
+    }
+  },
+  "codeGenerators": {
+    "swaggerToCSharpController": {
+      "controllerBaseClass": "Microsoft.AspNetCore.Mvc.Controller",
+      "controllerStyle": "Partial",
+      "useCancellationToken": false,
+      "aspNetNamespace": "Microsoft.AspNetCore.Mvc",
+      "className": "{controller}",
+      "operationGenerationMode": "MultipleClientsFromOperationId",
+      "generateOptionalParameters": false,
+      "generateJsonMethods": true,
+      "parameterArrayType": "System.Collections.Generic.IEnumerable",
+      "parameterDictionaryType": "System.Collections.Generic.IDictionary",
+      "responseArrayType": "System.Collections.ObjectModel.ObservableCollection",
+      "responseDictionaryType": "System.Collections.Generic.Dictionary",
+      "wrapResponses": false,
+      "generateResponseClasses": true,
+      "responseClass": "SwaggerResponse",
+      "namespace": "MovieRatingAPI.Fake",
+      "requiredPropertiesMustBeDefined": true,
+      "dateType": "System.DateTime",
+      "dateTimeType": "System.DateTime",
+      "timeType": "System.TimeSpan",
+      "timeSpanType": "System.TimeSpan",
+      "arrayType": "System.Collections.Generic.List",
+      "dictionaryType": "System.Collections.Generic.Dictionary",
+      "arrayBaseType": "System.Collections.ObjectModel.ObservableCollection",
+      "dictionaryBaseType": "System.Collections.Generic.Dictionary",
+      "classStyle": "Inpc",
+      "generateDefaultValues": true,
+      "generateDataAnnotations": true,
+      "excludedTypeNames": [],
+      "handleReferences": false,
+      "generateImmutableArrayProperties": false,
+      "generateImmutableDictionaryProperties": false,
+      "output": "../fake-api/MovieRatingApi.Fake/Controllers/Controllers.generated.cs"
+    }
+  }
+}
