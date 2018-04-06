@@ -1,0 +1,39 @@
+﻿@model MovieRating.UI.MovieRatingApi.MovieData
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>Movie</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Title)</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-3">
+            <img src="@Model.Poster" />
+        </div>
+        <div class="col-md-9">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Year)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Year)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Director)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Director)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImdbRating)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ImdbRating)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

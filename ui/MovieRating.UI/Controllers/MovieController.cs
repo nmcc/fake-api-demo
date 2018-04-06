@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MovieRating.UI.Models;
 using MovieRating.UI.MovieRatingApi;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MovieRating.UI.Controllers
 {
@@ -18,7 +16,16 @@ namespace MovieRating.UI.Controllers
 
         public IActionResult Search(string q)
         {
-            var result = this.movieClient.SearchAsync(q);
+            if (q == null)
+                return View();
+
+            var result = this.movieClient.SearchAsync(q).Result;
+            return View(new SearchMoviesResultViewModel(result));
+        }
+
+        public IActionResult Detail(string id)
+        {
+            var result = this.movieClient.GetAsync(id).Result;
 
             return View(result);
         }

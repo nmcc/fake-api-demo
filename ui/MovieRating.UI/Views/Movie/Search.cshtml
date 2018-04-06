@@ -1,0 +1,42 @@
+﻿@model SearchMoviesResultViewModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<form asp-controller="Movie" asp-action="search" method="get">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">
+                <span>Search Movies</span>
+                <input type="text" name="q"/>
+                <input type="submit" value="Search" />
+            </div>
+        </div>
+        @if (Model != null)
+        {
+            <div class="row">
+                @if (Model.Movies.Count() == 0)
+                {
+                    <span>No movies found.</span>
+                }
+                else
+                {
+                    @foreach (var movie in Model.Movies)
+                    {
+                        <div class="col-md-4">
+                            <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.ImdbID">
+                                <img src="@movie.Poster" />
+                                <br />
+                                <strong>@movie.Title</strong>
+                            </a>
+                        </div>
+                    }
+                }
+            </div>
+        }
+    </div>
+</form>
+

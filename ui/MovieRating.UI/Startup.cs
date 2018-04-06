@@ -22,6 +22,9 @@ namespace MovieRating.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            var baseUrl = Configuration.GetValue<string>("MovieRating.Api:BaseUrl");
+            services.AddTransient<MovieRatingApi.MovieClient>((ctx) => new MovieRatingApi.MovieClient(baseUrl));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
