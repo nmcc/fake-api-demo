@@ -17,7 +17,7 @@ namespace MovieRatingAPI.Controllers
 
         // GET api/values
         [HttpGet("search")]
-        public IEnumerable<SearchMovieResult.MovieEntry> Search(string q)
+        public IEnumerable<MovieEntry> Search(string q)
         {
             var searchResult = this.omdbApiClient.SearchMoviesAsync(q).Result;
 
@@ -26,6 +26,8 @@ namespace MovieRatingAPI.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [ProducesResponseType(200, Type = typeof(MovieData))]
+        [ProducesResponseType(404)]
         public ActionResult Get(string id)
         {
             var movie = this.omdbApiClient.GetMovieByImdbIdAsync(id).Result;
