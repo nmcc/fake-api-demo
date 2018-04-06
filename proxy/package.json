@@ -1,0 +1,21 @@
+{
+  "name": "connect-api-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:webpack": "webpack-dev-server",
+    "start:express": "node mock-express/express-mock.js",
+    "build": "webpack-dev-server index.js dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-api-mocker": "^1.3.6",
+    "express": "^4.16.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "mkdirp": "^0.5.1"
+  }
+}
