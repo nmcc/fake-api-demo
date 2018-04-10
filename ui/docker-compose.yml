@@ -1,0 +1,8 @@
+version: 2.0
+services:
+  movie-rating-api-mock:
+    image: movie-rating-api-mock:1.0
+    expose:
+      - "8080"
+    ports:
+      - "8080:80"
