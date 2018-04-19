@@ -2,6 +2,10 @@
 
 This repo contains a demo for Fake Web APIs.
 
+> !! DISCLAIMER !!
+>
+> This code is for educational purposes only. It is NOT ready for production.
+
 It includes demos of two types of Fakes:
 
 * Proxy fake
